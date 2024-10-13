@@ -14,7 +14,6 @@ function adicionar(){
     }
     let nome_produto = produto.split('-')[0];
     let valor_produto = produto.split('R$')[1];
-    verificar_inputs();
     let subtotal = qtde * valor_produto;
     let carrinho = document.getElementById('lista-produtos');
     carrinho.innerHTML = carrinho.innerHTML + `<section class="carrinho__produtos__produto">
